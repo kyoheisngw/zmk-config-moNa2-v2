@@ -1,3 +1,4 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100   // マウスホイール
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -21,6 +22,14 @@
 };
 
 / {
+    behaviors {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
+        };
+    };
     combos { compatible = "zmk,combos"; };
 
     macros {
@@ -75,8 +84,7 @@
 &kp Z      &kp X         &kp C         &kp V           &kp B        &none        &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 3 ESCAPE
 &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 TAB    &kp BACKSPACE  &kp ENTER                             &kp DELETE
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         WIN_NUM {
@@ -113,6 +121,7 @@
 &kp Z             &kp X             &kp C         &kp V           &kp B        &none        &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 7 ESCAPE
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 5 SPACE  &lt 6 TAB    &kp BACKSPACE  &kp ENTER                             &kp GLOBE
             >;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MAC_NUM {
@@ -149,6 +158,7 @@
 &kp Z         &kp X             &kp C         &kp V           &kp B        &none         &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 11 ESCAPE
 &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 9 SPACE  &lt 10 TAB    &kp BACKSPACE  &kp ENTER                             &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         IPAD_NUM {
@@ -185,6 +195,7 @@
 &kp Z         &kp X             &kp C         &kp V           &kp B         &none         &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 15 ESCAPE
 &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 13 SPACE  &lt 14 TAB    &kp BACKSPACE  &kp ENTER                             &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         IPHONE_NUM {
