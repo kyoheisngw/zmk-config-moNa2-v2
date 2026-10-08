@@ -151,7 +151,7 @@ layers:
   - UP ARROW
   - '&mkp MB5'
   - END
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -323,7 +323,7 @@ layers:
   - UP ARROW
   - '&mkp MB5'
   - END
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -495,7 +495,7 @@ layers:
   - UP ARROW
   - '&mkp MB5'
   - END
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -667,7 +667,7 @@ layers:
   - UP ARROW
   - '&mkp MB5'
   - END
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
