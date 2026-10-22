@@ -112,9 +112,9 @@
         WIN_SCROLL {
             bindings = <
 &bt_win  &bt_mac  &bt_ipad  &bt_iphone  &bt_win2                        &kp PAGE_UP    &trans          &trans          &trans           &kp HOME
-&trans   &trans   &trans    &trans      &trans              &trans      &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
-&trans   &trans   &trans    &trans      &trans    &trans    &bt BT_CLR  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans   &trans   &trans    &trans      &trans    &trans    &trans      &trans                                                          &bt BT_CLR_ALL
+&trans   &trans   &trans    &trans      &trans                  &trans  &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
+&trans   &trans   &trans    &trans      &trans    &bt BT_CLR    &trans  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans   &trans   &trans    &trans      &trans    &trans        &trans  &trans                                                          &trans
             >;
         };
 
@@ -150,9 +150,9 @@
         MAC_SCROLL {
             bindings = <
 &bt_win  &bt_mac  &bt_ipad  &bt_iphone  &bt_win2                        &kp PAGE_UP    &trans          &trans          &trans           &kp HOME
-&trans   &trans   &trans    &trans      &trans              &trans      &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
-&trans   &trans   &trans    &trans      &trans    &trans    &bt BT_CLR  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans   &trans   &trans    &trans      &trans    &trans    &trans      &trans                                                          &bt BT_CLR_ALL
+&trans   &trans   &trans    &trans      &trans                  &trans  &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
+&trans   &trans   &trans    &trans      &trans    &bt BT_CLR    &trans  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans   &trans   &trans    &trans      &trans    &trans        &trans  &trans                                                          &trans
             >;
         };
 
@@ -188,9 +188,9 @@
         IPAD_SCROLL {
             bindings = <
 &bt_win  &bt_mac  &bt_ipad  &bt_iphone  &bt_win2                        &kp PAGE_UP    &trans          &trans          &trans           &kp HOME
-&trans   &trans   &trans    &trans      &trans              &trans      &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
-&trans   &trans   &trans    &trans      &trans    &trans    &bt BT_CLR  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans   &trans   &trans    &trans      &trans    &trans    &trans      &trans                                                          &bt BT_CLR_ALL
+&trans   &trans   &trans    &trans      &trans                  &trans  &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
+&trans   &trans   &trans    &trans      &trans    &bt BT_CLR    &trans  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans   &trans   &trans    &trans      &trans    &trans        &trans  &trans                                                          &trans
             >;
         };
 
@@ -226,9 +226,9 @@
         IPHONE_SCROLL {
             bindings = <
 &bt_win  &bt_mac  &bt_ipad  &bt_iphone  &bt_win2                        &kp PAGE_UP    &mkp LCLK       &mkp MB3        &mkp RCLK        &kp HOME
-&trans   &trans   &trans    &trans      &trans              &trans      &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
-&trans   &trans   &trans    &trans      &trans    &trans    &bt BT_CLR  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans   &trans   &trans    &trans      &trans    &trans    &trans      &trans                                                          &bt BT_CLR_ALL
+&trans   &trans   &trans    &trans      &trans                  &trans  &kp PAGE_DOWN  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp END
+&trans   &trans   &trans    &trans      &trans    &bt BT_CLR    &trans  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans   &trans   &trans    &trans      &trans    &trans        &trans  &trans                                                          &trans
             >;
         };
     };
